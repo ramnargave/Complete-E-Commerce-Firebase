@@ -20,6 +20,7 @@ import UpdateProduct from './pages/admin/page/UpdateProduct';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Allproducts from './pages/allproducts/Allproducts';
+import PasswordShow from './pages/passwordPage/PasswordPage';
 function App() {
   return (
     <MyState>
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/allproducts" element={<Allproducts />} />
+          <Route path='/passwordshow' element={<PasswordShow/>}/>
           <Route path="/order" element={
             <ProtectedRoute>
               <Order />
